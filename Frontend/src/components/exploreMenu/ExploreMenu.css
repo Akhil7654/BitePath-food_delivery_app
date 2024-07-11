@@ -1,0 +1,130 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .explore-menu h1 {
+    color: #262626;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .explore-menu-text {
+    max-width: 60%;
+    color: #808080;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+  
+  .explore-menu-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore-menu-list img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  
+  .explore-menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+  }
+  
+  .explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+  }
+  
+  .explore-menu-list-item .active {
+    border: 4px solid tomato;
+    padding: 2px;
+  }
+  
+  @media (max-width: 1200px) {
+    .explore-menu-text {
+      max-width: 80%;
+    }
+  
+    .explore-menu-list {
+      gap: 20px;
+    }
+  
+    .explore-menu-list img {
+      width: 10vw;
+      min-width: 60px;
+    }
+  
+    .explore-menu-list-item p {
+      font-size: max(1.6vw, 14px);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .explore-menu-text {
+      max-width: 90%;
+    }
+  
+    .explore-menu-list {
+      gap: 15px;
+    }
+  
+    .explore-menu-list img {
+      width: 12vw;
+      min-width: 50px;
+    }
+  
+    .explore-menu-list-item p {
+      font-size: max(1.8vw, 12px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .explore-menu h1 {
+      font-size: 1.5em;
+    }
+  
+    .explore-menu-text {
+      max-width: 95%;
+      font-size: 0.9em;
+    }
+  
+    .explore-menu-list {
+      gap: 10px;
+    }
+  
+    .explore-menu-list img {
+      width: 15vw;
+      min-width: 40px;
+    }
+  
+    .explore-menu-list-item p {
+      font-size: max(2vw, 10px);
+    }
+  }
+  
